@@ -64,3 +64,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/graphic-designs/{id}', [GraphicDesignController::class, 'update']);
     Route::delete('/graphic-designs/{id}', [GraphicDesignController::class, 'destroy']);
 });
+

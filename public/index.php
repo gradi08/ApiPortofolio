@@ -1,9 +1,5 @@
 <?php
 
-if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
-    $_SERVER['HTTPS'] = 'on';
-}
-
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 

@@ -24,7 +24,7 @@ class AboutController extends Controller
                 'whatsapp' => '243973439644'
             ],
             'skills' => [
-                'Langages & Frameworks' => ['Laravel', 'PHP', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap'],
+                'Langages & Frameworks' => ['Laravel', 'PHP', 'JavaScript', 'React', 'Python', 'Java','Bootstrap','Django'],
                 'Outils & Design' => ['Adobe Photoshop', 'Adobe Illustrator', 'Git', 'GitHub', 'Microsoft Excel'],
                 'Base de données' => ['MySQL', 'PostgreSQL'],
             ]
