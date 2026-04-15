@@ -25,7 +25,7 @@ class AboutController extends Controller
             ],
             'skills' => [
                 'Langages & Frameworks' => ['Laravel', 'PHP', 'JavaScript', 'React', 'Python', 'Java','Bootstrap','Django'],
-                'Outils & Design' => ['Adobe Photoshop', 'Adobe Illustrator', 'Git', 'GitHub', 'Microsoft Excel'],
+                'Outils & Design' => ['Adobe Photoshop', 'Adobe Illustrator','Figma', 'Git', 'GitHub', 'Microsoft Excel'],
                 'Base de données' => ['MySQL', 'PostgreSQL'],
             ]
         ]
