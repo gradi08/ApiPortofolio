@@ -15,12 +15,25 @@ return [
     |
     */
 
-    'paths' => ['api/*'], // Applique CORS à toutes vos routes API
-    'allowed_methods' => ['*'], // Autorise toutes les méthodes (GET, POST, etc.)
+    'paths' => ['api/*', 'sanctum/csrf-cookie', 'login', 'logout', 'about', 'projects', 'cv/*'],
+    
+    'allowed_methods' => ['*'], // Ou ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+    
     'allowed_origins' => [
-        'https://gradinchaki08.menjidrc.com', // Votre domaine frontend
-        'http://localhost:5173'               // Pour le développement local
+        'https://gradinchaki.menjidrc.com',
+        'https://gradinchaki.menjidrc.com', // Si vous avez aussi le www
+        'http://localhost:3000', // Pour le développement local
+        'http://localhost:5173', // Pour Vite
     ],
-'allowed_headers' => ['*'], // Autorise tous les en-têtes
-'supports_credentials' => false, // Passez à true si vous utilisez cookies/sessions
+    
+    'allowed_origins_patterns' => [],
+    
+    'allowed_headers' => ['*'],
+    
+    'exposed_headers' => [],
+    
+    'max_age' => 0,
+    
+    'supports_credentials' => true, // Important pour les cookies/sessions
+
 ];
